@@ -36,7 +36,7 @@ void CBoard::Reset()
 		}
 	}
 	srand((unsigned int)time(NULL));
-	for (int randMines=(SquareRowCount*SquareColumnCount)/8; randMines>=0; )
+	for (int randMines=(SquareRowCount*SquareColumnCount)/8; randMines>0; )
 	{
 		int randcol= rand() % SquareColumnCount;
 		int randrow= rand() % SquareRowCount;
